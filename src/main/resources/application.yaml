@@ -13,7 +13,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/codingkiddo/config-repo.git
+          uri: https://github.com/codingkiddo/configserver.git
           default-label: main
           timeout: 5
           clone-on-start: true

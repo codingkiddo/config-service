@@ -44,8 +44,34 @@
 	<build>
 		<plugins>
 			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-compiler-plugin</artifactId>
+			    <configuration>
+			        <source>17</source>
+			        <target>17</target>
+			    </configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>ghcr.io/codingkiddo/config-service</name>
+					</image>
+					<docker>
+						<publishRegistry>
+							<username>codingkiddo</username>
+                            <token>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</token>
+                            <url>https://ghcr.io</url>
+						</publishRegistry>
+					</docker>
+					<!-- 
+					<profiles>
+						<profile>prod</profile>
+						<profile>testdata</profile>
+					</profiles>
+					 -->
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
