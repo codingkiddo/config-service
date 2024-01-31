@@ -14,9 +14,11 @@ spec:
       labels:
         app: config-service
     spec:
+      imagePullSecrets: 
+        - name: ghcr-login-secret
       containers:
         - name: config-service
-          image: config-service
+          image: ghcr.io/codingkiddo/config-service:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8888
