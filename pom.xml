@@ -66,11 +66,7 @@
 					<image>
 						<env><BP_JVM_VERSION>17</BP_JVM_VERSION></env>
 						<name>ghcr.io/codingkiddo/config-service</name>
-						<!--<platforms>
-							<platform>linux/amd64</platform>
-							<platform>linux/arm64</platform>
-							<platform>linux/arm/v5</platform>
-						</platforms>-->
+						
 					</image>
 					<docker>
 					
