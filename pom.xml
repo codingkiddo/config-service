@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.polarbookshop</groupId>
 	<artifactId>config-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>config-service</name>
 	<description>Centralize the application configuration</description>
 	<properties>
@@ -65,7 +65,7 @@
 				<configuration>
 					<image>
 						<env><BP_JVM_VERSION>17</BP_JVM_VERSION></env>
-						<name>ghcr.io/codingkiddo/config-service</name>
+						<name>ghcr.io/codingkiddo/config-service:${version}</name>
 						
 					</image>
 					<docker>
