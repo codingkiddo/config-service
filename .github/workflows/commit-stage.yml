@@ -6,7 +6,7 @@ on:
 env: 
   REGISTRY: ghcr.io
   IMAGE_NAME: codingkiddo/config-service
-  VERSION: latest
+  VERSION: 0.0.6-SNAPSHOT
 jobs:
   build:
     name: Build and Test
