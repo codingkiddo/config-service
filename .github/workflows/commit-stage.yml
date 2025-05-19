@@ -1,4 +1,4 @@
-name: Commit Stage
+name: Commit Stage # Test
 on:
   push:
   schedule: # Every Monday
