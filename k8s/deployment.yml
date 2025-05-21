@@ -15,11 +15,11 @@ spec:
         app: config-service
     spec:
       imagePullSecrets: 
-        - name: ghcr-login-secret
+        - name: dockerconfigjson-github-com
       containers:
         - name: config-service
-          image: ghcr.io/codingkiddo/config-service:latest
-          imagePullPolicy: IfNotPresent
+          image: ghcr.io/codingkiddo/config-service:0.0.7-SNAPSHOT
+          imagePullPolicy: Always
           ports:
             - containerPort: 8888
           env:
