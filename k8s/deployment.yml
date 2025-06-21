@@ -34,7 +34,7 @@ metadata:
   labels: 
     app: config-service
 spec:
-  type: ClusterIP
+  type: NodePort
   selector: 
     app: config-service
   ports:
