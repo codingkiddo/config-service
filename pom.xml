@@ -68,14 +68,6 @@
 						<name>ghcr.io/codingkiddo/config-service:${version}</name>
 						
 					</image>
-					<docker>
-					
-						<publishRegistry>
-							<username>codingkiddo</username>
-                            <token>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</token>
-                            <url>https://ghcr.io</url>
-						</publishRegistry>
-					</docker>
 					<profiles>
 						<profile>testdata</profile>
 					</profiles>
