@@ -18,3 +18,7 @@ kubectl logs deployment/config-service
   kubectl create -f dockerconfigjson.yaml
   
   kubectl delete -f dockerconfigjson.yaml
+  
+  
+  
+kubectl port-forward service/config-service 8888:80
